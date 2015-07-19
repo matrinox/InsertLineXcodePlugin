@@ -1,0 +1,344 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		834AB04A1B5B71C2006DD3C3 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 834AB0491B5B71C2006DD3C3 /* AppKit.framework */; };
+		834AB04C1B5B71C2006DD3C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 834AB04B1B5B71C2006DD3C3 /* Foundation.framework */; };
+		834AB0501B5B71C2006DD3C3 /* SublimeShortcuts-ObjC.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = 834AB04F1B5B71C2006DD3C3 /* SublimeShortcuts-ObjC.xcscheme */; };
+		834AB0531B5B71C2006DD3C3 /* SublimeShortcuts-ObjC.m in Sources */ = {isa = PBXBuildFile; fileRef = 834AB0521B5B71C2006DD3C3 /* SublimeShortcuts-ObjC.m */; };
+		834AB0561B5B71C2006DD3C3 /* NSObject_Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 834AB0551B5B71C2006DD3C3 /* NSObject_Extension.m */; };
+		DD74F1DC429ED8CB233BEFEC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 064A6A3A31D3DDA2B7337D56 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		064A6A3A31D3DDA2B7337D56 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		834AB0461B5B71C2006DD3C3 /* SublimeShortcuts-ObjC.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SublimeShortcuts-ObjC.xcplugin"; sourceTree = BUILT_PRODUCTS_DIR; };
+		834AB0491B5B71C2006DD3C3 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		834AB04B1B5B71C2006DD3C3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		834AB04F1B5B71C2006DD3C3 /* SublimeShortcuts-ObjC.xcscheme */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = "SublimeShortcuts-ObjC.xcscheme"; path = "SublimeShortcuts-ObjC.xcodeproj/xcshareddata/xcschemes/SublimeShortcuts-ObjC.xcscheme"; sourceTree = SOURCE_ROOT; };
+		834AB0511B5B71C2006DD3C3 /* SublimeShortcuts-ObjC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SublimeShortcuts-ObjC.h"; sourceTree = "<group>"; };
+		834AB0521B5B71C2006DD3C3 /* SublimeShortcuts-ObjC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SublimeShortcuts-ObjC.m"; sourceTree = "<group>"; };
+		834AB0541B5B71C2006DD3C3 /* NSObject_Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSObject_Extension.h; sourceTree = "<group>"; };
+		834AB0551B5B71C2006DD3C3 /* NSObject_Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSObject_Extension.m; sourceTree = "<group>"; };
+		834AB0571B5B71C2006DD3C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A0F9D56470EDF34825D1370 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		8F83174AFB2A6035BB912B13 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		834AB0441B5B71C2006DD3C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				834AB04A1B5B71C2006DD3C3 /* AppKit.framework in Frameworks */,
+				834AB04C1B5B71C2006DD3C3 /* Foundation.framework in Frameworks */,
+				DD74F1DC429ED8CB233BEFEC /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4F5EC5E3807F3A406DBBE6EF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A0F9D56470EDF34825D1370 /* Pods.debug.xcconfig */,
+				8F83174AFB2A6035BB912B13 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		834AB03D1B5B71C2006DD3C3 = {
+			isa = PBXGroup;
+			children = (
+				834AB04D1B5B71C2006DD3C3 /* SublimeShortcuts-ObjC */,
+				834AB0481B5B71C2006DD3C3 /* Frameworks */,
+				834AB0471B5B71C2006DD3C3 /* Products */,
+				4F5EC5E3807F3A406DBBE6EF /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		834AB0471B5B71C2006DD3C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				834AB0461B5B71C2006DD3C3 /* SublimeShortcuts-ObjC.xcplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		834AB0481B5B71C2006DD3C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				834AB0491B5B71C2006DD3C3 /* AppKit.framework */,
+				834AB04B1B5B71C2006DD3C3 /* Foundation.framework */,
+				064A6A3A31D3DDA2B7337D56 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		834AB04D1B5B71C2006DD3C3 /* SublimeShortcuts-ObjC */ = {
+			isa = PBXGroup;
+			children = (
+				834AB0511B5B71C2006DD3C3 /* SublimeShortcuts-ObjC.h */,
+				834AB0521B5B71C2006DD3C3 /* SublimeShortcuts-ObjC.m */,
+				834AB0541B5B71C2006DD3C3 /* NSObject_Extension.h */,
+				834AB0551B5B71C2006DD3C3 /* NSObject_Extension.m */,
+				834AB0571B5B71C2006DD3C3 /* Info.plist */,
+				834AB04E1B5B71C2006DD3C3 /* Supporting Files */,
+			);
+			path = "SublimeShortcuts-ObjC";
+			sourceTree = "<group>";
+		};
+		834AB04E1B5B71C2006DD3C3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				834AB04F1B5B71C2006DD3C3 /* SublimeShortcuts-ObjC.xcscheme */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		834AB0451B5B71C2006DD3C3 /* SublimeShortcuts-ObjC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 834AB05A1B5B71C2006DD3C3 /* Build configuration list for PBXNativeTarget "SublimeShortcuts-ObjC" */;
+			buildPhases = (
+				1FA79C5D61BD4C49FA014FD5 /* Check Pods Manifest.lock */,
+				834AB0421B5B71C2006DD3C3 /* Sources */,
+				834AB0431B5B71C2006DD3C3 /* Resources */,
+				834AB0441B5B71C2006DD3C3 /* Frameworks */,
+				250812A5160ADD1F9319E4ED /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SublimeShortcuts-ObjC";
+			productName = "SublimeShortcuts-ObjC";
+			productReference = 834AB0461B5B71C2006DD3C3 /* SublimeShortcuts-ObjC.xcplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		834AB03E1B5B71C2006DD3C3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = matrinox;
+				TargetAttributes = {
+					834AB0451B5B71C2006DD3C3 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = 834AB0411B5B71C2006DD3C3 /* Build configuration list for PBXProject "SublimeShortcuts-ObjC" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 834AB03D1B5B71C2006DD3C3;
+			productRefGroup = 834AB0471B5B71C2006DD3C3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				834AB0451B5B71C2006DD3C3 /* SublimeShortcuts-ObjC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		834AB0431B5B71C2006DD3C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				834AB0501B5B71C2006DD3C3 /* SublimeShortcuts-ObjC.xcscheme in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1FA79C5D61BD4C49FA014FD5 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		250812A5160ADD1F9319E4ED /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		834AB0421B5B71C2006DD3C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				834AB0531B5B71C2006DD3C3 /* SublimeShortcuts-ObjC.m in Sources */,
+				834AB0561B5B71C2006DD3C3 /* NSObject_Extension.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		834AB0581B5B71C2006DD3C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		834AB0591B5B71C2006DD3C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+			};
+			name = Release;
+		};
+		834AB05B1B5B71C2006DD3C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A0F9D56470EDF34825D1370 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				INFOPLIST_FILE = "SublimeShortcuts-ObjC/Info.plist";
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.matrinox.SublimeShortcuts-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Debug;
+		};
+		834AB05C1B5B71C2006DD3C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F83174AFB2A6035BB912B13 /* Pods.release.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				INFOPLIST_FILE = "SublimeShortcuts-ObjC/Info.plist";
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.matrinox.SublimeShortcuts-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		834AB0411B5B71C2006DD3C3 /* Build configuration list for PBXProject "SublimeShortcuts-ObjC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				834AB0581B5B71C2006DD3C3 /* Debug */,
+				834AB0591B5B71C2006DD3C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		834AB05A1B5B71C2006DD3C3 /* Build configuration list for PBXNativeTarget "SublimeShortcuts-ObjC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				834AB05B1B5B71C2006DD3C3 /* Debug */,
+				834AB05C1B5B71C2006DD3C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 834AB03E1B5B71C2006DD3C3 /* Project object */;
+}
