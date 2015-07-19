@@ -7,51 +7,51 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25D96D706343783F3E6A92F95273CEFB /* DTXcodeUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 9089E8209D6E8467818C9AB6BBD7B0FE /* DTXcodeUtils.h */; };
 		5460A3F5AEC2CC07BD2AC32BAE8D16E9 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CF3D5C7AE9F6232B70BDDB07EFB8447 /* Pods-dummy.m */; };
-		5B11EAF64C8CF81D62A146A8E28891CC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E7824A4C26D4E83D8B8A13A589B5F20 /* Cocoa.framework */; };
-		98F9FD24CF51B97479450904536417C7 /* DTXcodeUtils-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CBF7DD82C56FEC015EB6F21B7ACC7C /* DTXcodeUtils-dummy.m */; };
-		A2D8345B1A84BDBD9F7CA5F5A464BD97 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E7824A4C26D4E83D8B8A13A589B5F20 /* Cocoa.framework */; };
-		AD040CD7EDC2AA133A93B073B26D47D6 /* DTXcodeUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 24D1A76660C14F8BA508D3572588970D /* DTXcodeUtils.h */; };
-		C7758AEC6A02C6EB313420C809B3B94F /* DTXcodeHeaders.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C1A16F31C8C344D2B246E045F34AFFB /* DTXcodeHeaders.h */; };
-		FC3A474F6D0C0B8DD87BBCA70DF0BFFD /* DTXcodeUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B702C05C535A3AC23DDEF881BB52AB77 /* DTXcodeUtils.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		5E2C22C565DF999B44553D30272F6C65 /* DTXcodeHeaders.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A07EC26D4FC5F7748C63A20CF609944 /* DTXcodeHeaders.h */; };
+		937C511087A4921A565A146CC6FBF39B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48E3EC92F01A157DC9C09D8C7323A973 /* Cocoa.framework */; };
+		A2D8345B1A84BDBD9F7CA5F5A464BD97 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48E3EC92F01A157DC9C09D8C7323A973 /* Cocoa.framework */; };
+		BD827E6D3BF38CC3A9D6371DC74596B3 /* DTXcodeUtils-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E623853AC091F7193F87D42E96F6B7E /* DTXcodeUtils-dummy.m */; };
+		C3773E2F28F43CCFDEC2165DA7500672 /* DTXcodeUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 37C3A538C68F1EDD210A23B906A24A20 /* DTXcodeUtils.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E927443EFC5D56EFBC6CC2B20293AFA5 /* PBXContainerItemProxy */ = {
+		7F5F55016CD668BDB208527FE9106DD9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 281402946AA644E1A41B388652C51204;
+			remoteGlobalIDString = 3A9245E52E82082AFA9FBBC902FEFB70;
 			remoteInfo = DTXcodeUtils;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E623853AC091F7193F87D42E96F6B7E /* DTXcodeUtils-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DTXcodeUtils-dummy.m"; sourceTree = "<group>"; };
 		0F1651D85A8F3A8451B829690B419DEE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
 		19F830CABFD7C5AB3A939E4B18915F47 /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
-		24D1A76660C14F8BA508D3572588970D /* DTXcodeUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTXcodeUtils.h; path = Pod/Classes/DTXcodeUtils.h; sourceTree = "<group>"; };
-		47CBF7DD82C56FEC015EB6F21B7ACC7C /* DTXcodeUtils-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DTXcodeUtils-dummy.m"; sourceTree = "<group>"; };
+		2A07EC26D4FC5F7748C63A20CF609944 /* DTXcodeHeaders.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTXcodeHeaders.h; path = Pod/XcodeHeaders/DTXcodeHeaders.h; sourceTree = "<group>"; };
+		37C3A538C68F1EDD210A23B906A24A20 /* DTXcodeUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTXcodeUtils.m; path = Pod/Classes/DTXcodeUtils.m; sourceTree = "<group>"; };
+		48E3EC92F01A157DC9C09D8C7323A973 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		5C71966CC2A2F0A82730662EC552530D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
 		6CF3D5C7AE9F6232B70BDDB07EFB8447 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
-		7C1A16F31C8C344D2B246E045F34AFFB /* DTXcodeHeaders.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTXcodeHeaders.h; path = Pod/XcodeHeaders/DTXcodeHeaders.h; sourceTree = "<group>"; };
-		9E7824A4C26D4E83D8B8A13A589B5F20 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		875E2508E2FB0F05FFED0877668DF27D /* libDTXcodeUtils.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDTXcodeUtils.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9089E8209D6E8467818C9AB6BBD7B0FE /* DTXcodeUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTXcodeUtils.h; path = Pod/Classes/DTXcodeUtils.h; sourceTree = "<group>"; };
 		A5F822E59C48343778A7A0893BEB2933 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
 		B3BB5840B4BDD2DDB6F5AB1247265D75 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
-		B702C05C535A3AC23DDEF881BB52AB77 /* DTXcodeUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTXcodeUtils.m; path = Pod/Classes/DTXcodeUtils.m; sourceTree = "<group>"; };
 		C4F62FB5F0ED969B9B5133B55E04143F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C88113A79685B4EFEE7BAD12896829F7 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		CE9975F8D799E37766FEDDD951BCD43E /* DTXcodeUtils.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DTXcodeUtils.xcconfig; sourceTree = "<group>"; };
-		D15BEB3D97A269121E8A01F99A2C6B97 /* libDTXcodeUtils.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDTXcodeUtils.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC2274F5F7E47DFC1A0F82DB49B913B7 /* DTXcodeUtils-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DTXcodeUtils-prefix.pch"; sourceTree = "<group>"; };
-		F29F788841850FE2D38D96E646AABEC8 /* DTXcodeUtils-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "DTXcodeUtils-Private.xcconfig"; sourceTree = "<group>"; };
+		FAA4BC39FF7493B28417E07D1A1A3F86 /* DTXcodeUtils-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "DTXcodeUtils-Private.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		CC1D87EB9CD27D6AF56C8512244444D0 /* Frameworks */ = {
+		A0D559A7406C36173BDDA6F28C80909A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B11EAF64C8CF81D62A146A8E28891CC /* Cocoa.framework in Frameworks */,
+				937C511087A4921A565A146CC6FBF39B /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,7 +77,7 @@
 		67A96FA033F30F75C9E3499ACB0D5F52 /* OS X */ = {
 			isa = PBXGroup;
 			children = (
-				9E7824A4C26D4E83D8B8A13A589B5F20 /* Cocoa.framework */,
+				48E3EC92F01A157DC9C09D8C7323A973 /* Cocoa.framework */,
 			);
 			name = "OS X";
 			sourceTree = "<group>";
@@ -118,7 +118,7 @@
 		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D15BEB3D97A269121E8A01F99A2C6B97 /* libDTXcodeUtils.a */,
+				875E2508E2FB0F05FFED0877668DF27D /* libDTXcodeUtils.a */,
 				C4F62FB5F0ED969B9B5133B55E04143F /* libPods.a */,
 			);
 			name = Products;
@@ -127,9 +127,9 @@
 		D2FF4F04CEC4EB4D349D8706F4F1E1F2 /* DTXcodeUtils */ = {
 			isa = PBXGroup;
 			children = (
-				7C1A16F31C8C344D2B246E045F34AFFB /* DTXcodeHeaders.h */,
-				24D1A76660C14F8BA508D3572588970D /* DTXcodeUtils.h */,
-				B702C05C535A3AC23DDEF881BB52AB77 /* DTXcodeUtils.m */,
+				2A07EC26D4FC5F7748C63A20CF609944 /* DTXcodeHeaders.h */,
+				9089E8209D6E8467818C9AB6BBD7B0FE /* DTXcodeUtils.h */,
+				37C3A538C68F1EDD210A23B906A24A20 /* DTXcodeUtils.m */,
 				E10C2D628295C0C2F3A1B87C381B1727 /* Support Files */,
 			);
 			path = DTXcodeUtils;
@@ -139,8 +139,8 @@
 			isa = PBXGroup;
 			children = (
 				CE9975F8D799E37766FEDDD951BCD43E /* DTXcodeUtils.xcconfig */,
-				F29F788841850FE2D38D96E646AABEC8 /* DTXcodeUtils-Private.xcconfig */,
-				47CBF7DD82C56FEC015EB6F21B7ACC7C /* DTXcodeUtils-dummy.m */,
+				FAA4BC39FF7493B28417E07D1A1A3F86 /* DTXcodeUtils-Private.xcconfig */,
+				0E623853AC091F7193F87D42E96F6B7E /* DTXcodeUtils-dummy.m */,
 				DC2274F5F7E47DFC1A0F82DB49B913B7 /* DTXcodeUtils-prefix.pch */,
 			);
 			name = "Support Files";
@@ -158,12 +158,12 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		8FC36760F86B1EB53A5C55E2FAC5FD91 /* Headers */ = {
+		F64C4666B6746BB7FD9702BF5C028B07 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7758AEC6A02C6EB313420C809B3B94F /* DTXcodeHeaders.h in Headers */,
-				AD040CD7EDC2AA133A93B073B26D47D6 /* DTXcodeUtils.h in Headers */,
+				5E2C22C565DF999B44553D30272F6C65 /* DTXcodeHeaders.h in Headers */,
+				25D96D706343783F3E6A92F95273CEFB /* DTXcodeUtils.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,20 +180,20 @@
 			buildRules = (
 			);
 			dependencies = (
-				4D9AF8005754A5E04B4B7E045000E2E6 /* PBXTargetDependency */,
+				5AD43A0E5F630F9FD2FC23122F7E6D57 /* PBXTargetDependency */,
 			);
 			name = Pods;
 			productName = Pods;
 			productReference = C4F62FB5F0ED969B9B5133B55E04143F /* libPods.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		281402946AA644E1A41B388652C51204 /* DTXcodeUtils */ = {
+		3A9245E52E82082AFA9FBBC902FEFB70 /* DTXcodeUtils */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C9C59E1FD6290B8F9B4C4D912777C8B0 /* Build configuration list for PBXNativeTarget "DTXcodeUtils" */;
+			buildConfigurationList = D7564637608A50AFB8FE3374D7B4FC1D /* Build configuration list for PBXNativeTarget "DTXcodeUtils" */;
 			buildPhases = (
-				53BF58EDD6356BE494560118361EDA41 /* Sources */,
-				CC1D87EB9CD27D6AF56C8512244444D0 /* Frameworks */,
-				8FC36760F86B1EB53A5C55E2FAC5FD91 /* Headers */,
+				BDA0DB179866DC79B788BCE268F9274D /* Sources */,
+				A0D559A7406C36173BDDA6F28C80909A /* Frameworks */,
+				F64C4666B6746BB7FD9702BF5C028B07 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -201,7 +201,7 @@
 			);
 			name = DTXcodeUtils;
 			productName = DTXcodeUtils;
-			productReference = D15BEB3D97A269121E8A01F99A2C6B97 /* libDTXcodeUtils.a */;
+			productReference = 875E2508E2FB0F05FFED0877668DF27D /* libDTXcodeUtils.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -225,22 +225,13 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				281402946AA644E1A41B388652C51204 /* DTXcodeUtils */,
+				3A9245E52E82082AFA9FBBC902FEFB70 /* DTXcodeUtils */,
 				0D991E7647338654F8B2E4C7467E824B /* Pods */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		53BF58EDD6356BE494560118361EDA41 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				98F9FD24CF51B97479450904536417C7 /* DTXcodeUtils-dummy.m in Sources */,
-				FC3A474F6D0C0B8DD87BBCA70DF0BFFD /* DTXcodeUtils.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		892B28034A25F8A913541AC9C665E66B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -249,22 +240,49 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BDA0DB179866DC79B788BCE268F9274D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD827E6D3BF38CC3A9D6371DC74596B3 /* DTXcodeUtils-dummy.m in Sources */,
+				C3773E2F28F43CCFDEC2165DA7500672 /* DTXcodeUtils.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4D9AF8005754A5E04B4B7E045000E2E6 /* PBXTargetDependency */ = {
+		5AD43A0E5F630F9FD2FC23122F7E6D57 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = DTXcodeUtils;
-			target = 281402946AA644E1A41B388652C51204 /* DTXcodeUtils */;
-			targetProxy = E927443EFC5D56EFBC6CC2B20293AFA5 /* PBXContainerItemProxy */;
+			target = 3A9245E52E82082AFA9FBBC902FEFB70 /* DTXcodeUtils */;
+			targetProxy = 7F5F55016CD668BDB208527FE9106DD9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		34CAB6F0C2138F2296C11A9C53669712 /* Release */ = {
+		339984F79D861688BD61264D8AA14D3D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F29F788841850FE2D38D96E646AABEC8 /* DTXcodeUtils-Private.xcconfig */;
+			baseConfigurationReference = FAA4BC39FF7493B28417E07D1A1A3F86 /* DTXcodeUtils-Private.xcconfig */;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "Target Support Files/DTXcodeUtils/DTXcodeUtils-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		422F6D95D927DE1C4C007D4B87E8B0FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAA4BC39FF7493B28417E07D1A1A3F86 /* DTXcodeUtils-Private.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				EXECUTABLE_PREFIX = lib;
@@ -296,6 +314,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -321,6 +340,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0F1651D85A8F3A8451B829690B419DEE /* Pods.release.xcconfig */;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				EXECUTABLE_PREFIX = lib;
@@ -339,6 +359,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5C71966CC2A2F0A82730662EC552530D /* Pods.debug.xcconfig */;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				EXECUTABLE_PREFIX = lib;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
@@ -349,22 +370,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		C50922D4C66588892AC635EB6D7C1DCD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F29F788841850FE2D38D96E646AABEC8 /* DTXcodeUtils-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				EXECUTABLE_PREFIX = lib;
-				GCC_PREFIX_HEADER = "Target Support Files/DTXcodeUtils/DTXcodeUtils-prefix.pch";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -423,11 +428,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C9C59E1FD6290B8F9B4C4D912777C8B0 /* Build configuration list for PBXNativeTarget "DTXcodeUtils" */ = {
+		D7564637608A50AFB8FE3374D7B4FC1D /* Build configuration list for PBXNativeTarget "DTXcodeUtils" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C50922D4C66588892AC635EB6D7C1DCD /* Debug */,
-				34CAB6F0C2138F2296C11A9C53669712 /* Release */,
+				339984F79D861688BD61264D8AA14D3D /* Debug */,
+				422F6D95D927DE1C4C007D4B87E8B0FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

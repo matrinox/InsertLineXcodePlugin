@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8312CD2E1B5B8E59007B2E40 /* libDTXcodeUtils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8312CD2D1B5B8E59007B2E40 /* libDTXcodeUtils.a */; };
 		834AB04A1B5B71C2006DD3C3 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 834AB0491B5B71C2006DD3C3 /* AppKit.framework */; };
 		834AB04C1B5B71C2006DD3C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 834AB04B1B5B71C2006DD3C3 /* Foundation.framework */; };
 		834AB0501B5B71C2006DD3C3 /* SublimeShortcuts-ObjC.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = 834AB04F1B5B71C2006DD3C3 /* SublimeShortcuts-ObjC.xcscheme */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		064A6A3A31D3DDA2B7337D56 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8312CD2D1B5B8E59007B2E40 /* libDTXcodeUtils.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libDTXcodeUtils.a; path = "../../../Library/Developer/Xcode/DerivedData/SublimeShortcuts-ObjC-hfownpdhsgnatkbgnyxucmtnrhqp/Build/Products/Debug/libDTXcodeUtils.a"; sourceTree = "<group>"; };
 		834AB0461B5B71C2006DD3C3 /* SublimeShortcuts-ObjC.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SublimeShortcuts-ObjC.xcplugin"; sourceTree = BUILT_PRODUCTS_DIR; };
 		834AB0491B5B71C2006DD3C3 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		834AB04B1B5B71C2006DD3C3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
@@ -35,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8312CD2E1B5B8E59007B2E40 /* libDTXcodeUtils.a in Frameworks */,
 				834AB04A1B5B71C2006DD3C3 /* AppKit.framework in Frameworks */,
 				834AB04C1B5B71C2006DD3C3 /* Foundation.framework in Frameworks */,
 				DD74F1DC429ED8CB233BEFEC /* libPods.a in Frameworks */,
@@ -74,6 +77,7 @@
 		834AB0481B5B71C2006DD3C3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8312CD2D1B5B8E59007B2E40 /* libDTXcodeUtils.a */,
 				834AB0491B5B71C2006DD3C3 /* AppKit.framework */,
 				834AB04B1B5B71C2006DD3C3 /* Foundation.framework */,
 				064A6A3A31D3DDA2B7337D56 /* libPods.a */,
@@ -297,6 +301,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.matrinox.SublimeShortcuts-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = xcplugin;
 			};
 			name = Debug;
@@ -313,6 +318,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.matrinox.SublimeShortcuts-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = xcplugin;
 			};
 			name = Release;

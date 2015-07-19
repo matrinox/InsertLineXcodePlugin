@@ -46,32 +46,40 @@
   // Sample Menu Item:
   NSMenuItem *menuItem = [[NSApp mainMenu] itemWithTitle:@"Edit"];
   if (menuItem != nil) {
-    [self createMenuItems:menuItem];
+    [self createInsertLineMenu:menuItem];
   }
 }
 
-- (void)createMenuItems:(NSMenuItem *)menuItem {
-  [[menuItem submenu] addItem:[NSMenuItem separatorItem]];
+- (void)createInsertLineMenu:(NSMenuItem *)menuItem {
+  NSMenuItem *insertLineMenuItem = [[NSMenuItem alloc] initWithTitle:@"Insert Line" action:nil keyEquivalent:@""];
+  NSMenu *insertLineSubmenu = [[NSMenu alloc] initWithTitle:@"Insert Line"];
+  insertLineMenuItem.submenu = insertLineSubmenu;
+  [self createMenuItemsInMenu:insertLineSubmenu];
+  [menuItem.submenu addItem:insertLineMenuItem];
+}
+
+- (void)createMenuItemsInMenu:(NSMenu *)menu {
+  [menu addItem:[NSMenuItem separatorItem]];
   unichar enterChar = NSNewlineCharacter;
   NSString *enterKey = [NSString stringWithCharacters:&enterChar length:1];
   // Insert Line Before
   NSMenuItem *insertLineBeforeActionItem = [[NSMenuItem alloc] initWithTitle:@"Insert Line Before" action:@selector(insertLineBefore) keyEquivalent:enterKey];
   [insertLineBeforeActionItem setKeyEquivalentModifierMask:(NSAlphaShiftKeyMask | NSCommandKeyMask)];
   [insertLineBeforeActionItem setTarget:self];
-  [[menuItem submenu] addItem:insertLineBeforeActionItem];
+  [menu addItem:insertLineBeforeActionItem];
   // Insert Line Before (In Place)
   NSMenuItem *insertLineBeforeActionItemInPlace = [[NSMenuItem alloc] initWithTitle:@"Insert Line Before (In Place)" action:@selector(insertLineBeforeInPlace) keyEquivalent:@""];
   [insertLineBeforeActionItemInPlace setTarget:self];
-  [[menuItem submenu] addItem:insertLineBeforeActionItemInPlace];
+  [menu addItem:insertLineBeforeActionItemInPlace];
   // Insert Line After
   NSMenuItem *insertLineAfterActionItem = [[NSMenuItem alloc] initWithTitle:@"Insert Line After" action:@selector(insertLineAfter) keyEquivalent:enterKey];
   [insertLineAfterActionItem setKeyEquivalentModifierMask:NSCommandKeyMask];
   [insertLineAfterActionItem setTarget:self];
-  [[menuItem submenu] addItem:insertLineAfterActionItem];
+  [menu addItem:insertLineAfterActionItem];
   // Insert Line After (In Place)
   NSMenuItem *insertLineAfterActionItemInPlace = [[NSMenuItem alloc] initWithTitle:@"Insert Line After (In Place)" action:@selector(insertLineAfterInPlace) keyEquivalent:@""];
   [insertLineAfterActionItemInPlace setTarget:self];
-  [[menuItem submenu] addItem:insertLineAfterActionItemInPlace];
+  [menu addItem:insertLineAfterActionItemInPlace];
 }
 
 - (void)insertLineBefore {
