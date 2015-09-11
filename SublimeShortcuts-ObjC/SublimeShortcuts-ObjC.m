@@ -80,6 +80,11 @@
   NSMenuItem *insertLineAfterActionItemInPlace = [[NSMenuItem alloc] initWithTitle:@"Insert Line After (In Place)" action:@selector(insertLineAfterInPlace) keyEquivalent:@""];
   [insertLineAfterActionItemInPlace setTarget:self];
   [menu addItem:insertLineAfterActionItemInPlace];
+  // Mark Line
+  NSMenuItem *markLine = [[NSMenuItem alloc] initWithTitle:@"Mark Line" action:@selector(markLine) keyEquivalent:@"k"];
+  [markLine setKeyEquivalentModifierMask:(NSCommandKeyMask | NSAlternateKeyMask)];
+  [markLine setTarget:self];
+  [menu addItem:markLine];
 }
 
 - (void)insertLineBefore {
@@ -97,22 +102,10 @@
   }
   DVTSourceTextView *sourceTextView = [DTXcodeUtils currentSourceTextView];
   // Insert at the beginning of the line
-  NSRange begginingLineRange = NSMakeRange(linesRange.location, 0);
+  NSUInteger begginingPoint = linesRange.location;
   // Find out how many spaces for indentation of the first line
-  NSString *startingString = [sourceTextView.string substringFromIndex:linesRange.location];
-  NSUInteger numberOfSpaces = [startingString rangeOfCharacterFromSet:[NSCharacterSet alphanumericCharacterSet]].location;
-
-  // Insert text with a new line plus spaces multiplied by the # of indentation spaces
-  NSString *indentationSpaces = [self stringByRepeatingSpacesBy:numberOfSpaces];
-  NSString *insertText = [@"\n" stringByAppendingString:indentationSpaces];
-  NSRange insertPointRange = NSMakeRange(begginingLineRange.location + numberOfSpaces, 0);
-  [sourceTextView insertText:insertText replacementRange:insertPointRange];
-
-  // Select previous line (if not in place)
-  if (!inPlace) {
-    NSRange newSelectionRange = insertPointRange;
-    [sourceTextView setSelectedRange:newSelectionRange];
-  }
+  NSUInteger numberOfSpaces = [self numberOfSpacesInString:sourceTextView.string fromIndex:linesRange.location];
+  [self insertSpaces:numberOfSpaces inTextView:sourceTextView atPoint:begginingPoint inPlace:inPlace];
 }
 
 - (void)insertLineAfter {
@@ -124,31 +117,42 @@
 }
 
 - (void)insertLineAfter:(BOOL)inPlace {
-  NSRange linesRange = [self getLinesRange];
+  NSRange linesRange = [self getLinesRange:true];
   if (linesRange.location == NSNotFound) {
     return;
   }
   DVTSourceTextView *sourceTextView = [DTXcodeUtils currentSourceTextView];
   // Insert at the beginning of the line
-  NSRange endLineRange = NSMakeRange(linesRange.location + linesRange.length, 0);
+  NSUInteger endPoint = linesRange.location + linesRange.length;
   // Find out how many spaces for indentation of the first line
-  NSString *startingString = [sourceTextView.string substringFromIndex:linesRange.location];
-  NSUInteger numberOfSpaces = [startingString rangeOfCharacterFromSet:[NSCharacterSet alphanumericCharacterSet]].location;
+  NSUInteger numberOfSpaces = [self numberOfSpacesInString:sourceTextView.string fromIndex:linesRange.location];
+  [self insertSpaces:numberOfSpaces inTextView:sourceTextView atPoint:endPoint inPlace:inPlace];
+}
 
+- (void)insertSpaces:(NSUInteger)numberOfSpaces inTextView:(NSTextView *)textView atPoint:(NSUInteger)point inPlace:(BOOL)inPlace {
   // Insert text with a new line plus spaces multiplied by the # of indentation spaces
   NSString *indentationSpaces = [self stringByRepeatingSpacesBy:numberOfSpaces];
   NSString *insertText = [indentationSpaces stringByAppendingString:@"\n"];
-  NSRange insertPointRange = NSMakeRange(endLineRange.location, 0);
-  [sourceTextView insertText:insertText replacementRange:insertPointRange];
+  NSRange insertPointRange = NSMakeRange(point, 0);
+  [textView insertText:insertText replacementRange:insertPointRange];
 
   // Select previous line (if not in place)
   if (!inPlace) {
-    NSRange newSelectionRange = NSMakeRange(insertPointRange.location + numberOfSpaces, 0);
-    [sourceTextView setSelectedRange:newSelectionRange];
+    [textView setSelectedRange:NSMakeRange(point + numberOfSpaces, 0)];
   }
 }
 
+- (NSUInteger)numberOfSpacesInString:(NSString *)string fromIndex:(NSUInteger)index {
+  NSRange spaceRange = [string rangeOfString:@" *" options:NSRegularExpressionSearch range:NSMakeRange(index, string.length - index)];
+  NSUInteger numberOfSpaces = spaceRange.length;
+  return numberOfSpaces;
+}
+
 - (NSRange)getLinesRange {
+  return [self getLinesRange:false];
+}
+
+- (NSRange)getLinesRange:(BOOL)atEnd {
   DVTSourceTextView *sourceTextView = [DTXcodeUtils currentSourceTextView];
   // Get the range of the selected text within the source code editor.
   // Get the selected text using the range from above.
@@ -160,9 +164,34 @@
   if (selectedRange.location == NSNotFound) {
     return NSMakeRange(NSNotFound, 0);
   }
+  // There's a bit of usability bug when at the end and the range is a selection (length > 0)
+  // selecting the end will go to the next line instead of right at that line
+  // this just accounts for that by checking if the last selected character is a new line
+  if (atEnd && selectedRange.length > 0) {
+    // Only search the last character
+    NSRange newLineRange = [sourceTextView.string rangeOfCharacterFromSet:[NSCharacterSet newlineCharacterSet] options:NSBackwardsSearch range:NSMakeRange(selectedRange.location + selectedRange.length - 1, 1)];
+    // If not found, then choose the end
+    if (newLineRange.location == NSNotFound) {
+      selectedRange = NSMakeRange(selectedRange.location + selectedRange.length, 0);
+    }
+    // Otherwise, choose the one right before
+    else {
+      selectedRange = NSMakeRange(selectedRange.location + selectedRange.length - 1, 0);
+    }
+  }
   // same with line range of course
   NSRange linesRange = [sourceTextView.string lineRangeForRange:selectedRange];
   return linesRange;
+}
+
+- (void)markLine {
+  NSRange linesRange = [self getLinesRange];
+  if (linesRange.location == NSNotFound) {
+    return;
+  }
+  DVTSourceTextView *sourceTextView = [DTXcodeUtils currentSourceTextView];
+  [sourceTextView insertText:@"|>" replacementRange:NSMakeRange(linesRange.location, 0)];
+  [sourceTextView insertText:@"<|" replacementRange:NSMakeRange(linesRange.location + linesRange.length, 0)];
 }
 
 - (NSString *)stringByRepeatingSpacesBy:(NSUInteger)number {
